@@ -1,0 +1,135 @@
+:root { --iit-red: #8c1515; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #222;
+  background: #f8f9fa;
+}
+
+header {
+  background: var(--iit-red);
+  color: #fff;
+  padding: 1rem 1rem 0.5rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0.25rem 0 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0.5rem auto 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.nav-list li { margin: 0; padding: 0; }
+.nav-list a {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.nav-list a:hover, .nav-list a:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.nav-list .placeholder span {
+  opacity: 0.7;
+  padding: 0.4rem 0.75rem;
+  border: 1px dashed rgba(255, 255, 255, 0.45);
+  border-radius: 6px;
+}
+
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: var(--iit-red);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+}
+
+.btn:hover, .btn:focus {
+  filter: brightness(1.05);
+}
+
+aside {
+  background: #faf6f6;
+  border-left: 4px solid var(--iit-red);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+figure {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+figcaption {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+footer {
+  max-width: 960px;
+  margin: 1rem auto 2rem;
+  padding: 0 1rem;
+  text-align: right;
+}
+
+.back-top {
+  text-decoration: none;
+  color: var(--iit-red);
+  font-weight: 600;
+}
